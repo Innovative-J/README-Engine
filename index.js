@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+const generateMarkdown = require('./potential-enigma/Develop/utils/generateMarkdown.js');
 inquirer
     .prompt([
         {
@@ -18,7 +19,6 @@ inquirer
             name: 'installation',
             message: 'Enter installation instructions:'
         },
-        // how can i create a tabel of contents
         {
             type: 'input',
             name: 'usage',
@@ -29,13 +29,8 @@ inquirer
             name: 'credits',
             message: 'Enter your list of collaborators or resources:'
         },
-        // { do not use this one
-        //     type: 'input',
-        //     name: 'contributing',
-        //     message: 'Enter contribution guidelines:'
-        // },
         {
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
             message: 'Choose a license for your project:',
             choices: ['Apache License 2.0',
@@ -68,9 +63,12 @@ inquirer
             message: 'Enter your email address:'
         }
     ])
+
     .then((response) => {
         const { title, description, installation, usage, credits, license, tests, github, email } = response;
-        fs.writeFile('README.md', readmeContent, (err) => {
+        const readmeContent = 'hi';
+
+        fs.appendFile('README.md', generateMarkdown({title, description, installation, usage, credits, license, tests, github, email}), (err) => {
             if (err) {
                 console.error('Error writing README file:', err);
             } else {
@@ -78,3 +76,4 @@ inquirer
             }
         });
     });
+
