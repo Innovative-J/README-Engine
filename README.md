@@ -13,10 +13,10 @@ This project is in regards of creating a command line application using html, js
 7. [Questions](#questions)
 
 ## Installation
-Assuming the user is starting from the begnning it is important to start of by installing a code editor that can be searched on any website. The next section to download is node.js which can be downloaded from the offical website which is here [https://nodejs.org/en] once node is installed followed by its guideance. The last thing to use not install would be using this git hub repo [https://github.com/Innovative-J/README-Engine.git] . Once the github is cloned you will now be able to call index.js using node in the command line which will then take you to the prompts to use the readme engine.
+Assuming the user is starting from the begnning it is important to start of by installing a code editor that can be searched on any website. The next section to download is node.js which can be downloaded from the offical website which is here [https://nodejs.org/en] once node is installed followed by its guideance. The last thing to use not install would be using this git hub repo [https://github.com/Innovative-J/README-Engine.git] . Once the github is cloned you will now be able to call index.js using node in the command line which will then take you to the prompts to use the readme engine. A link to a video will be provided for the projects installtion [https://drive.google.com/file/d/18uImRCjT6UbDloaGig72ebURQAt_Ncly/view?usp=sharing]
 
 ## Usage
-Please see images for exact location and sites to download the proper programs to be able to use the readme generator.[images] Usages requires for the user to use a code editor as well as node to be installed on the local computer. Once that is done please use the link provided here for the cloning of the github repo that can which then be ran on your local system.
+Please see images for exact location and sites to download the proper programs to be able to use the readme generator.[images] Usages requires for the user to use a code editor as well as node to be installed on the local computer. Once that is done please use the link provided here for the cloning of the github repo that can which then be ran on your local system. A link to a video application will be provided and video will be saved under images.
 
 ## License
 This project is licensed under the MIT license.
